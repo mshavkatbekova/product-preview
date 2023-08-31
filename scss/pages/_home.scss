@@ -1,0 +1,64 @@
+.main {
+  margin-left: 3.2rem;
+}
+
+.main__subtitle {
+  margin-bottom: 2rem;
+  margin-top: 3.2rem;
+}
+.main__title {
+  color: $black-color;
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  margin-bottom: 2.4rem;
+}
+.main__description {
+  margin-bottom: 2.9rem;
+  color: $silver-color;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 164.286% */
+}
+.main__price {
+  display: flex;
+  gap: 1.9rem;
+  align-items: center;
+}
+
+.main__btn {
+  margin-top: 3rem;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  background: $green-light-color;
+  gap: 1.1rem;
+}
+
+.main__btn:hover {
+  background-color: $green-color;
+}
+.btn__icon {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-left: 6.2rem;
+}
+.btn__text {
+  color: $white-color;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-right: 6.2rem;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: row-reverse;
+  }
+}

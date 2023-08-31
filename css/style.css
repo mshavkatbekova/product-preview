@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+h2 {
+  color: #6c7289;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.hero {
+  width: 50%;
+  height: 100%;
+}
+
+.main {
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+}
+
+.main {
+  margin-left: 3.2rem;
+}
+
+.main__subtitle {
+  margin-bottom: 2rem;
+  margin-top: 3.2rem;
+}
+
+.main__title {
+  color: #1c232b;
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  margin-bottom: 2.4rem;
+}
+
+.main__description {
+  margin-bottom: 2.9rem;
+  color: #6c7289;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 164.286% */
+}
+
+.main__price {
+  display: flex;
+  gap: 1.9rem;
+  align-items: center;
+}
+
+.main__btn {
+  margin-top: 3rem;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  background: #3d8168;
+  gap: 1.1rem;
+}
+
+.main__btn:hover {
+  background-color: #1a4032;
+}
+
+.btn__icon {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-left: 6.2rem;
+}
+
+.btn__text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-right: 6.2rem;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: row-reverse;
+  }
+}/*# sourceMappingURL=style.css.map */
